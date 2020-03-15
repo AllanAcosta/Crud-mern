@@ -10,7 +10,7 @@ import pug from 'pug';
 const app = express();
 
 //RUTA BASE DE DATOS
-const dbUrl = 'mongodb://localhost:27017/dbsistema';
+const dbUrl = 'mongodb+srv://root:23162788@cluster0-z0abj.mongodb.net/test?retryWrites=true&w=majority';
 
 //ESTABLECIENDO CONEXION A LA BASE DE DATOS MONGODB
 mongoose.Promise = global.Promise;
