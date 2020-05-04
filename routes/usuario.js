@@ -4,9 +4,9 @@ import auth from '../middlewares/auth';
 
 const router = routerx();
 
-router.post('/add', auth.verifyAdmin, usuarioController.add);
+router.post('/add', usuarioController.add);
 router.get('/query', auth.verifyAdmin, usuarioController.query);
-router.get('/list', auth.verifyAdmin, usuarioController.list);
+router.get('/list',  usuarioController.list);
 router.put('/update', auth.verifyAdmin, usuarioController.update);
 router.delete('/remove', auth.verifyAdmin, usuarioController.remove);
 router.put('/activate', auth.verifyAdmin, usuarioController.activate);
