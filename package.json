@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev index.js",
+    "start": "babel-node index.js",
     "dev": "nodemon index.js --exec babel-node"
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
